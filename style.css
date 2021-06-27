@@ -1,0 +1,199 @@
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Monaco, monospace;
+}
+
+body {
+  background-image: linear-gradient(#150063, #2c0044);
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#canvas {
+  border-radius: 5px;
+  background-color: gray;
+}
+
+.start-screen {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-content {
+  width: 500px;
+  height: 225px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.enter-name {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(6, 0, 43);
+}
+
+#username {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 400px;
+  transform: translateX(-50%);
+  font-size: 35px;
+  color: black;
+}
+
+.submit {
+  background-color: rgb(6, 0, 43);
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 10px 25px;
+  color: yellow;
+  margin-top: 10px;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translatex(-50%);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255)
+}
+
+/*...................................................................*/
+
+.end-screen {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.end-content {
+  width: 500px;
+  height: 275px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.gameover {
+  animation: blinker 1s linear 0.5;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(165, 0, 0);
+}
+
+#score {
+  animation: blinker 1s linear 0.5;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: black;
+}
+
+#highscore {
+  animation: blinker 1s linear 0.5;
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: black;
+}
+
+#player {
+  animation: blinker 1s linear 0.5;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: black;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.tryagain {
+  background-color: rgb(6, 0, 43);
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 10px 25px;
+  color: yellow;
+  margin-top: 10px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translatex(-50%);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.tryagain:hover {
+  background-color: black;
+  color: white;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
