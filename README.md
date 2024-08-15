@@ -3,7 +3,7 @@ This is an infinite runner game with a wall and a ceiling. Clicking or pressing 
 The goal of this game is to survive the obstacles and increase your score.
 
 ### 🔗 Links
-Play Pro Runner - [Click Here](https://thilak-07.github.io/Pro_Runner/)
+Play Pro Runner - [Click Here](https://thilak-07.github.io/pro-runner-game/)
 
 ## Screenshots
 ![App Screenshot](https://github.com/Thilak-07/Pro-Runner/blob/main/Screenshots/The%20Game.png)
